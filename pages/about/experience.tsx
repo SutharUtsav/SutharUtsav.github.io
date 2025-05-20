@@ -19,7 +19,7 @@ const ExperiencePage = () => {
       "Optimized financial reports by refining complex SQL queries, cutting report generation time significantly.",
       "Implemented double-entry ledger accounting with RBAC, enabling secure, multi-tenant data access."
     ],
-    skills: ["PHP", "Laravel", "React.js", "AWS", "CI/CD"],
+    skills: ["PHP", "Laravel", "React.js", "Microservices", "AWS", "CI/CD"],
   },
   {
     company: "Confidosoft Solution Pvt Ltd",
