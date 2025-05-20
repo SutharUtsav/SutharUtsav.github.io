@@ -1,0 +1,246 @@
+/* Container Styles */
+.container {
+  position: relative;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+}
+
+/* Timeline Line */
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+/* Timeline Items Container */
+.itemsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Individual Timeline Item */
+.timelineItem {
+  position: relative;
+  display: flex;
+}
+
+.timelineItemLeft {
+  justify-content: flex-start;
+}
+
+.timelineItemRight {
+  justify-content: flex-end;
+}
+
+/* Content Wrapper */
+.contentWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.contentWrapperLeft {
+  padding-right: 0;
+}
+
+.contentWrapperRight {
+  padding-left: 0;
+}
+
+/* Timeline Dot */
+.timelineDot {
+  position: absolute;
+  top: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  background: linear-gradient(to right,#3b82f6,#3b82f6);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.timelineDotLeft {
+  right: 0;
+}
+
+.timelineDotRight {
+  left: 0;
+}
+
+/* Experience Card */
+.experienceCard {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.experienceCard:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Company Header */
+.companyHeader {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+
+/* Logo Container */
+.logoContainer {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+  overflow: hidden;
+}
+
+
+/* Company Info */
+.companyInfo h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.companyInfo p {
+  color: #3b82f6;
+  font-weight: 500;
+  margin: 0;
+}
+
+.refs {
+  margin: 0 0 0 auto;
+}
+
+.refLink {
+
+}
+
+/* Experience Details */
+.experienceDetails {
+  padding: 1.5rem;
+}
+
+/* Meta Info */
+.metaInfo {
+  display: flex;
+  align-items: center;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.metaInfo svg {
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* Description List */
+.descriptionList {
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.descriptionItem {
+  display: flex;
+}
+
+.bulletPoint {
+  color: #3b82f6;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+/* Skills Container */
+.skillsContainer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skillTag {
+  padding: 0.25rem 0.75rem;
+  background-color: #dbeafe;
+  color: #1e40af;
+  font-size: 0.75rem;
+  border-radius: 9999px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .timelineLine {
+    left: 1.5rem;
+  }
+
+  .contentWrapper {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .timelineDot {
+    left: 1.375rem !important;
+    right: auto !important;
+  }
+
+  .contentWrapperLeft {
+    padding: 0;
+  }
+
+  .contentWrapperRight {
+    padding: 0;
+  }
+
+  .companyHeader {
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .companyInfo h3 {
+    font-size: 1.1rem;
+  }
+
+  .companyInfo p {
+    font-size: 0.65rem;
+  }
+
+  .refs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+
+  .experienceDetails {
+    font-size: 0.7rem;
+  }
+
+  .skillTag {
+    font-size: 0.65rem;
+  }
+}

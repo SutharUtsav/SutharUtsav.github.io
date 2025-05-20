@@ -35,3 +35,20 @@ export interface User {
   public_repos: number;
   followers: number;
 }
+
+
+export interface ExperienceItem {
+  company: string;
+  role: string;
+  duration: string;
+  location?: string;
+  logo?: string;
+  description: string[];
+  skills?: string[];
+  refs?: Refs[]
+}
+
+interface Refs {
+  label: string,
+  link: string
+}

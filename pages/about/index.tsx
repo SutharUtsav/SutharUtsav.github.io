@@ -90,7 +90,7 @@ const AboutPage = () => {
               <Link href={'https://www.ddu.ac.in/'} target='_blank'>
                 <Image src={'/logos/ddit_logo.png'} alt='Dharmsinh Desai University' width={150} height={150} style={{"borderRadius": "50%"}}/>
               </Link>
-              <div>
+              <div className={styles.educationDetail}>
                 <h3>Dharmsing Desai University, Nadiad</h3>
                 <h4>B.Tech (Computer Engineering)</h4>
                 <h5>2019-2023</h5>
