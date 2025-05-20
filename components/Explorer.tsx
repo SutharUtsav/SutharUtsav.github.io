@@ -40,7 +40,6 @@ const explorerItems = [
 
 const Explorer = () => {
   const [portfolioOpen, setPortfolioOpen] = useState(true);
-  const [aboutOpen, setAboutOpen] = useState(true);
 
   return (
     <div className={styles.explorer}>
@@ -64,7 +63,7 @@ const Explorer = () => {
           className={styles.files}
           style={portfolioOpen ? { display: 'block' } : { display: 'none' }}
         >
-          {explorerItems.map((item, pindex) => (
+          {explorerItems.map((item) => (
             <div key={item.name}>
               <Link href={item.path}>
                 <div className={styles.file}>

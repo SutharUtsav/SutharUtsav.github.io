@@ -28,23 +28,23 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
         <div className={styles.profileSection}>
           <div className={styles.profileInfo}>
             <Image
-              src={user.avatar_url}
+              src={user?.avatar_url}
               className={styles.avatar}
-              alt={user.login}
+              alt={user?.login}
               width={100}
               height={100}
               priority
             />
             <div className={styles.userInfo}>
-              <h2 className={styles.username}>{user.login}</h2>
+              <h2 className={styles.username}>{user?.login}</h2>
               <div className={styles.stats}>
                 <div className={styles.statItem}>
                   <VscRepo className={styles.statIcon} />
-                  <span>{user.public_repos} repositories</span>
+                  <span>{user?.public_repos} repositories</span>
                 </div>
                 <div className={styles.statItem}>
                   <VscPerson className={styles.statIcon} />
-                  <span>{user.followers} followers</span>
+                  <span>{user?.followers} followers</span>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
           <h3 className={styles.sectionTitle}>Popular Repositories</h3>
         </div>
         <div className={styles.reposContainer}>
-          {repos.map((repo) => (
+          {repos?.map((repo) => (
             <RepoCard key={repo.id} repo={repo} />
           ))}
         </div>

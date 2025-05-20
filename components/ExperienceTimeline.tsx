@@ -79,8 +79,8 @@ const ExperienceTimeline = ({ experiences }: { experiences: ExperienceItem[] }) 
                     <p>{exp.role}</p>
                   </div>
                   <div className={styles.refs}>
-                    {exp.refs?.map((ref) => (
-                        <Link href={ref.link} target="_blank" className={styles.refLink}>
+                    {exp.refs?.map((ref, index) => (
+                        <Link href={ref.link} target="_blank" key={index} className={styles.refLink}>
                             {ref.label === 'live' && <GoLinkExternal size={"20px"} fill='#3b82f6' />}
                             {ref.label === 'github' && <FaGithub size={"20px"} />}
                         </Link>
