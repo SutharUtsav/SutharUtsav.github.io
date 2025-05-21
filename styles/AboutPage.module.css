@@ -1,42 +1,62 @@
-.container {
-  width: 100%;
-  height: 100%;
+.layout {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 2.5rem;
-  color: var(--text-color);
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.03em;
 }
 
-.content {
+.pageHeading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.jobTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.pageSubtitle {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.2;
+}
+
+.aboutPage {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.whatIDoSection {
+  background: var(--article-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: var(--accent-color);
-  letter-spacing: -0.03em;
-}
-
-.subtitle {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  margin-bottom: 3rem;
-}
-
-.aboutContent {
-  width: 100%;
-}
-
-.section {
-  margin-bottom: 2.5rem;
-}
-
-.section:last-child {
-  margin-bottom: 0;
-}
 
 .sectionTitle {
   font-size: 2rem;
@@ -46,6 +66,23 @@
   letter-spacing: -0.03em;
   line-height: 1.2;
   text-align: center;
+}
+
+.aboutParagraph {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.abouInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 2rem;
 }
 
 .paragraph {
@@ -61,18 +98,55 @@
 
 .highlight {
   color: var(--accent-color);
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.sectionContainer {
-  margin: 50px 0;
+.whatIDoSectionContainer li {
+  margin: 0.25rem 0;
+}
+
+.fullStackDevelopment {
+  padding: 3rem;
+  margin: 1.5rem;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/logos/full_stack_development.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.cloudInfraArchitechture {
+  padding: 3rem;
+  margin: 1.5rem;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 1)
+    ),
+    url(/logos/cloud_infra_architecture.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.educationSection {
+  background: var(--article-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
   display: flex;
-  /* align-items: center; */
-  gap: 50px;
-}
-
-.sectionContainer img{
-  width: fit-content;
+  flex-direction: column;
+  align-items: center;
 }
 
 .educationContainer {
@@ -80,17 +154,37 @@
   align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 2rem 1rem;
-  }
+.educationDetail{
+  display: flex;
+  flex-direction: column;    
+}
 
-  .title {
+.educationDetail p, .educationDetail h3 {
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .pageTitle {
     font-size: 2rem;
-    text-align: center;
   }
 
-  .subtitle {
+  .jobTitle {
+    font-size: 1.25rem;
+  }
+
+  .pageSubtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .abouInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aboutParagraph {
     font-size: 1rem;
     margin-bottom: 2rem;
   }
@@ -99,31 +193,28 @@
     font-size: 1.75rem;
   }
 
+  .whatIDoSectionContainer li {
+    line-height: 1.25rem;
+  }
+
+  .fullStackDevelopment, .cloudInfraArchitechture {
+    padding: 1rem;
+    margin: 1rem 0;
+    list-style-position: inside;
+  }
+  
   .paragraph {
     font-size: 0.95rem;
     line-height: 1.65;
-  }
-
-  .sectionContainer {
-    flex-direction: column;
-  }
-
-  .sectionContainer img{
-    width: 70vw;
-    height: 100%;
   }
 
   .educationContainer {
     flex-direction: column;
   }
 
-  .educationDetail{
-    margin: 10px 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  .educationDetail {
     border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
-
 }

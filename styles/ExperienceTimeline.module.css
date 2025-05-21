@@ -104,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-right: 1rem;
   overflow: hidden;
 }
@@ -115,21 +115,18 @@
   font-size: 1.25rem;
   font-weight: 700;
   color: #1f2937;
-  margin: 0;
+  margin: 0.25rem 0;
 }
 
 .companyInfo p {
-  color: #3b82f6;
+  font-size: 1rem;
   font-weight: 500;
-  margin: 0;
+  color: var(--accent-color);
+  margin: 0.05rem 0;
 }
 
 .refs {
   margin: 0 0 0 auto;
-}
-
-.refLink {
-
 }
 
 /* Experience Details */
@@ -193,6 +190,9 @@
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .container {
+    padding: 2rem 0;
+  }
   .timelineLine {
     left: 1.5rem;
   }
@@ -216,18 +216,15 @@
   }
 
   .companyHeader {
-    padding-top: 50px;
+    padding-top: 30px;
     flex-direction: column;
     gap: 8px;
+    text-align: center;
   }
 
-  .companyInfo h3 {
-    font-size: 1.1rem;
-  }
-
-  .companyInfo p {
-    font-size: 0.65rem;
-  }
+  /* .companyInfo p {
+    font-size: 1rem;
+  } */
 
   .refs {
     position: absolute;

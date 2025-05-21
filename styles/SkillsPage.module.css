@@ -1,0 +1,50 @@
+.pageContainer {
+  height: 100%;
+  max-width: 900px;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.03em;
+}
+
+.contentContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.skillSetsContainer {
+    margin-top: 3rem;
+}
+
+.skillContainer {
+    display: flex;
+    align-items: center;
+    margin: 0.25rem;
+    gap: 2rem;
+}
+
+.skillsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skillLogo {
+    width: 40px;
+}

@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiBriefcase, FiCalendar, FiMapPin } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
+import { GoLinkExternal } from 'react-icons/go';
+import Link from 'next/link';
+
 import { ExperienceItem } from '@/types';
 import styles from '@/styles/ExperienceTimeline.module.css';
-import Link from 'next/link';
-import { GoLinkExternal } from 'react-icons/go';
-import { FaGithub } from 'react-icons/fa';
 
 const ExperienceTimeline = ({ experiences }: { experiences: ExperienceItem[] }) => {
   const containerVariants = {
@@ -66,8 +67,7 @@ const ExperienceTimeline = ({ experiences }: { experiences: ExperienceItem[] }) 
                         src={exp.logo} 
                         alt={exp.company} 
                         width={64} 
-                        height={64} 
-                        className="object-contain p-1"
+                        height={64}
                         unoptimized={exp.logo.startsWith('http')}
                       />
                     ) : (

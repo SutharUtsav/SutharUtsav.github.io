@@ -52,3 +52,13 @@ interface Refs {
   label: string,
   link: string
 }
+
+export interface SkillSet {
+  title: string,
+  items: Skills[]
+}
+
+interface Skills {
+  label: string,
+  logo: string
+}

@@ -48,7 +48,7 @@ const ExperiencePage = () => {
       "Integrated Razorpay and Stripe APIs for payment processing"
     ],
     skills: ["JavaScript", "React.js", "Redux", "Postman"],
-    refs: [{label: "live", link: "https://egrocerweb.wrteam.me/"}],
+    // refs: [{label: "live", link: "https://egrocerweb.wrteam.me/"}],
   }
 ];
 
@@ -56,7 +56,7 @@ const ExperiencePage = () => {
     <div className={styles.pageContainer}>
       <div className={styles.contentContainer}>
         <div className={styles.header}>
-          <motion.h1 
+          <motion.h1
             className={styles.title}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -85,4 +85,4 @@ export async function getStaticProps() {
   };
 }
 
-export default ExperiencePage;  
+export default ExperiencePage;
