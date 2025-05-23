@@ -114,14 +114,14 @@
 .companyInfo h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #1f2937;
+  color: var(--bg-text);
   margin: 0.25rem 0;
 }
 
 .companyInfo p {
   font-size: 1rem;
-  font-weight: 500;
-  color: var(--accent-color);
+  color: #1f2937;
+  font-weight: 600;
   margin: 0.05rem 0;
 }
 
@@ -183,7 +183,7 @@
   padding: 0.25rem 0.75rem;
   background-color: #dbeafe;
   color: #1e40af;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   border-radius: 9999px;
 }
 
@@ -222,9 +222,9 @@
     text-align: center;
   }
 
-  /* .companyInfo p {
-    font-size: 1rem;
-  } */
+  .companyInfo p {
+    font-size: 1.15rem;
+  }
 
   .refs {
     position: absolute;
@@ -234,10 +234,8 @@
   }
 
   .experienceDetails {
-    font-size: 0.7rem;
-  }
-
-  .skillTag {
-    font-size: 0.65rem;
+    font-size: 1.095rem;
+    line-height: 1.65rem;
+    padding: 1rem;
   }
 }

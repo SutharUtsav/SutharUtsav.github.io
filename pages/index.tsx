@@ -38,6 +38,20 @@ export default function HomePage() {
       type: 'object-method',
     },
     { code: '      </div>', type: 'object-method' },
+    { code: '      <div className="contact">', type: 'object-method' },
+    {
+      code: '        <Link href="https://github.com/SutharUtsav">Github</Link>',
+      type: 'object-method',
+    },
+    {
+      code: '        <Link href="https://www.linkedin.com/in/utsavsuthar/">LinkedIn</Link>',
+      type: 'object-method',
+    },
+    {
+      code: '        <Link href="mailto:utsavsuthar24@gmail.com">Mail</Link>',
+      type: 'object-method',
+    },
+    { code: '      </div>', type: 'object-method' },
     { code: '    </main>', type: 'object-method' },
     { code: '  );', type: 'close' },
     { code: '};', type: 'close-function' },

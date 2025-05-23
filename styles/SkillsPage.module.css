@@ -1,5 +1,6 @@
 .pageContainer {
   height: 100%;
+  width: 100%;
   max-width: 900px;
   padding: 2rem 1rem;
   font-family: 'Inter', sans-serif;
@@ -33,9 +34,9 @@
 
 .skillContainer {
     display: flex;
-    align-items: center;
     margin: 0.25rem;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .skillsContent {
@@ -48,3 +49,14 @@
 .skillLogo {
     width: 40px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .skillContainer{
+    margin: 2rem 0;
+  }
+
+  .skillLogo {
+    height: fit-content;
+  }
+}  

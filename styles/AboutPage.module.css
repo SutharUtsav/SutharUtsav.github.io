@@ -175,7 +175,7 @@
   }
 
   .pageSubtitle {
-    font-size: 1rem;
+    font-size: 1.095rem;
     margin-bottom: 2rem;
   }
 
@@ -193,18 +193,21 @@
     font-size: 1.75rem;
   }
 
+  .whatIDoSection {
+    padding: 2rem 0.75rem;
+  }
+
   .whatIDoSectionContainer li {
-    line-height: 1.25rem;
+    line-height: 1.65rem;
   }
 
   .fullStackDevelopment, .cloudInfraArchitechture {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     margin: 1rem 0;
-    list-style-position: inside;
   }
   
   .paragraph {
-    font-size: 0.95rem;
+    font-size: 1.095rem;
     line-height: 1.65;
   }
 

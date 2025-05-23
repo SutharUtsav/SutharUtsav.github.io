@@ -28,7 +28,7 @@ const explorerItems = [
   },
   {
     name: 'projects.json',
-    path: '/about/projects',
+    path: '/projects',
     icon: '/logos/json_icon.svg',
   },
   {

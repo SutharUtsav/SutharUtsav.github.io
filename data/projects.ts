@@ -8,35 +8,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: 'Driwwwle',
+    title: 'CommunityGrid',
     description:
-      'Discover creative websites and developers. A portal for you to share your projects.',
-    logo: '/logos/driwwwle.svg',
-    link: 'https://github.com/itsnitinr/driwwwle',
-    slug: 'driwwwle',
+      'Built for a real client, CommunityGrid is a fully responsive community website with Google Sheets as the backend and Firebase Hosting for deployment. It embraces a serverless DevOps approach with automated workflows, authentication, and SEO-optimized architecture.',
+    logo: '/logos/communitygrid-logo.svg',
+    link: 'https://kutchmewadasuthar.org/',
+    slug: 'community-web-app',
   },
   {
-    title: 'VSCode Portfolio',
+    title: 'Portfolio',
     description:
-      'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
+      '🔥 My personal portfolio website, built to showcase my work and skills.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
-    slug: 'vscode-portfolio',
-  },
-  {
-    title: 'Subtrackt',
-    description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
-  },
-  {
-    title: 'Coolify Deployments',
-    description:
-      'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
-    slug: 'coolify-vscode-extension',
+    link: 'https://github.com/SutharUtsav/SutharUtsav.github.io',
+    slug: 'portfolio',
   },
 ];
