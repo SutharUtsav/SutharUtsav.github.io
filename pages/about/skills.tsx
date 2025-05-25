@@ -16,17 +16,17 @@ const SkillsPage = () => {
                 logo: "/logos/ts_icon.svg"
             },
             {
-                label: "C#",
-                logo: "/logos/csharp_icon.svg"
-            },
-            {
                 label: "PHP",
                 logo: "/logos/php_icon.svg"
             },
             {
                 label: "Python",
                 logo: "/logos/python_icon.svg"
-            }
+            },
+            {
+                label: "C#",
+                logo: "/logos/csharp_icon.svg"
+            },
         ]
     },
     {
@@ -35,6 +35,85 @@ const SkillsPage = () => {
             {
                 label: "React",
                 logo: "/logos/react_icon.svg"
+            },
+            {
+                label: "Next.js",
+                logo: "/logos/nextjs_logo.svg"
+            },
+            {
+                label: "Laravel",
+                logo: "/logos/laravel_logo.svg"
+            },
+            {
+                label: "Node.js",
+                logo: "/logos/nodejs_logo.svg"
+            },
+            {
+                label: "Bootstrap",
+                logo: "/logos/bootstrap_logo.svg"
+            },
+            {
+                label: "SAAS",
+                logo: "/logos/saas_logo.svg"
+            }
+        ]
+    },
+    {
+        title: "Database",
+        items: [
+            {
+                label: "SQL",
+                logo: "/logos/sql_logo.svg"
+            },
+            {
+                label: "MongoDB",
+                logo: "/logos/mongodb_logo.svg"
+            },
+            {
+                label: "Redis",
+                logo: "/logos/redis_logo.svg"
+            }
+        ]
+    },
+    {
+        title: "DevOps",
+        items: [
+            {
+                label: "AWS",
+                logo: "/logos/aws_logo.svg"
+            },
+            {
+                label: "Firebase",
+                logo: "/logos/firebase_logo.svg"
+            },
+            {
+                label: "Git",
+                logo: "/logos/git_logo.svg"
+            },
+            {
+                label: "Github",
+                logo: "/logos/github_logo_small.svg"
+            },
+            {
+                label: "Docker",
+                logo: "/logos/docker_logo.svg"
+            },
+        ]
+    },
+    {
+        title: "Tools",
+        items: [
+            {
+                label: "Visual Studio Code",
+                logo: "/logos/vscode_icon_small.svg"
+            },
+            {
+                label: "Postman",
+                logo: "/logos/postman_logo.svg"
+            },
+            {
+                label: "Jira",
+                logo: "/logos/jira_logo.svg"
             }
         ]
     }
