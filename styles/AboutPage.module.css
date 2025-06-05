@@ -21,6 +21,7 @@
   color: var(--accent-color);
   margin-bottom: 0.5rem;
   line-height: 1.2;
+  letter-spacing: -0.01rem;
 }
 
 .jobTitle {
@@ -28,7 +29,8 @@
   font-weight: 600;
   color: var(--text-secondary);
   margin-bottom: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .pageSubtitle {
@@ -37,7 +39,8 @@
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 3rem;
   max-width: 600px;
-  line-height: 1.2;
+  line-height: 1.5;
+  letter-spacing: 0.0025em;
 }
 
 .aboutPage {
@@ -46,6 +49,13 @@
 }
 
 .whatIDoSection {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.whatIDoSectionContainer {
   background: var(--article-bg);
   border-radius: 8px;
   padding: 2rem;
@@ -54,7 +64,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 
@@ -87,9 +96,17 @@
 
 .paragraph {
   margin-bottom: 1.25rem;
-  line-height: 1.7;
+  line-height: 1.5;
   color: var(--text-color);
   font-size: 1rem;
+  letter-spacing: 0.01em;
+}
+
+.subDescription, .description {
+  line-height: 1.5;
+  color: var(--text-color);
+  font-size: 1rem;
+  letter-spacing: 0.01em;
 }
 
 .paragraph:last-child {
@@ -99,14 +116,11 @@
 .highlight {
   color: var(--accent-color);
   font-weight: 600;
-  font-size: 1.75rem;
-  line-height: 1.2;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.008em;
   margin-bottom: 1.5rem;
   text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-.whatIDoSectionContainer li {
-  margin: 0.25rem 0;
 }
 
 .fullStackDevelopment {
@@ -152,6 +166,7 @@
 .educationContainer {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .educationDetail{
@@ -194,11 +209,7 @@
   }
 
   .whatIDoSection {
-    padding: 2rem 0.75rem;
-  }
-
-  .whatIDoSectionContainer li {
-    line-height: 1.65rem;
+    grid-template-columns: 1fr; 
   }
 
   .fullStackDevelopment, .cloudInfraArchitechture {

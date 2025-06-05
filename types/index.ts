@@ -62,3 +62,10 @@ interface Skills {
   label: string,
   logo: string
 }
+
+export interface IServiceItem {
+  title: string,
+  icons: string[],
+  shortDescription: string,
+  description: string
+}
