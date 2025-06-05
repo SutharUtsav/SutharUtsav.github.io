@@ -1,41 +1,10 @@
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import GithubPage from '../github';
-
-import { Repo, User } from '@/types';
 import styles from '@/styles/AboutPage.module.css';
 import services from '@/data/service';
 
 const AboutPage = () => {
-  const [user, setUser] = useState<User | null>(null);
-  const [repos, setRepos] = useState<Repo[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchGithubData = async () => {
-      setLoading(true);
-      const username = process.env.NEXT_PUBLIC_GITHUB_USERNAME;
-
-      const [userRes, repoRes] = await Promise.all([
-        fetch(`https://api.github.com/users/${username}`),
-        fetch(`https://api.github.com/users/${username}/repos?sort=pushed&per_page=6`),
-      ]);
-
-      if(userRes.ok && repoRes.ok) {
-        const userData = await userRes.json();
-        const repoData = await repoRes.json();
-  
-        setUser(userData);
-        setRepos(repoData);
-      }
-
-      setLoading(false);
-    };
-
-    fetchGithubData();
-  }, []);
 
   return (
     <div className={styles.layout}>
@@ -59,12 +28,6 @@ const AboutPage = () => {
             </div>
           ))}
         </div>
-
-        {/* {loading || !user ? (
-          <></>
-        ) : 
-          <GithubPage repos={repos} user={user}/>
-        } */}
 
         <div className={styles.educationSection}>
           <h2 className={styles.sectionTitle}>Education</h2>            
