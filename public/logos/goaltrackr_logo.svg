@@ -1,0 +1,26 @@
+<svg width="190" height="100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Goal Trackr Logo with Emoji in O">
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4A90E2"/>
+      <stop offset="100%" stop-color="#9013FE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="190" height="100" rx="20" ry="20" fill="url(#bgGradient)" />
+
+  <!-- GOAL with emoji in place of O -->
+  <text x="30" y="45" font-family="Poppins, sans-serif" font-weight="700" font-size="36" fill="white" dominant-baseline="middle" letter-spacing="0.05em">
+    G
+  </text>
+  <text x="60" y="45" font-family="Segoe UI Emoji, sans-serif" font-weight="700" font-size="36" fill="white" dominant-baseline="middle" letter-spacing="0.05em">
+    🎯
+  </text>
+  <text x="110" y="45" font-family="Poppins, sans-serif" font-weight="700" font-size="36" fill="white" dominant-baseline="middle" letter-spacing="0.05em">
+    A L
+  </text>
+
+  <!-- TRACKR -->
+  <text x="100" y="75" font-family="Poppins, sans-serif" font-weight="400" font-size="22" fill="white" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.1em">
+    TRACKR
+  </text>
+</svg>

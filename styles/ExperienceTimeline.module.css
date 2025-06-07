@@ -116,6 +116,8 @@
   font-weight: 700;
   color: var(--bg-text);
   margin: 0.25rem 0;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .companyInfo p {
@@ -123,6 +125,8 @@
   color: #1f2937;
   font-weight: 600;
   margin: 0.05rem 0;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
 }
 
 .refs {
@@ -224,6 +228,8 @@
 
   .companyInfo p {
     font-size: 1.15rem;
+    line-height: 1.33;
+    letter-spacing: -0.008em;
   }
 
   .refs {
@@ -235,7 +241,8 @@
 
   .experienceDetails {
     font-size: 1.095rem;
-    line-height: 1.65rem;
+    line-height: 1.32;
+    letter-spacing: -0.006em;
     padding: 1rem;
   }
 }

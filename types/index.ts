@@ -9,11 +9,15 @@ export interface Article {
   comments_count: number;
 }
 
+interface ProjectLink {
+  link: string,
+  type: string
+}
 export interface Project {
   title: string;
   description: string;
   logo: string;
-  link: string;
+  links: ProjectLink[];
   slug: string;
 }
 

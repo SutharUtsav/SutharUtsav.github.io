@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import GitHubCalendar from 'react-github-calendar';
 
 import styles from '@/styles/AboutPage.module.css';
 import services from '@/data/service';
@@ -27,6 +28,22 @@ const AboutPage = () => {
               <p className={styles.description} style={{marginTop:"0.75rem"}}>{service.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className={styles.contributions}>
+          <GitHubCalendar
+            username={process.env.NEXT_PUBLIC_GITHUB_USERNAME!}
+            hideColorLegend
+            hideMonthLabels
+            colorScheme="dark"
+            theme={{
+              dark: ['#161B22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+              light: ['#161B22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+            }}
+            style={{
+              width: '100%',
+            }}
+            />
         </div>
 
         <div className={styles.educationSection}>

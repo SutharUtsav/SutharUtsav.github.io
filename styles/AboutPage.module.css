@@ -4,7 +4,6 @@
   height: 100%;
   width: 100%;
   font-family: 'Inter', sans-serif;
-  letter-spacing: -0.03em;
 }
 
 .pageHeading {
@@ -177,6 +176,16 @@
 .educationDetail p, .educationDetail h3 {
   line-height: 1.2rem;
   margin-bottom: 0.5rem;
+}
+
+.contributions {
+  background: var(--article-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {

@@ -505,6 +505,18 @@
   animation: rotate 35s linear infinite;
 }
 
+.contributions {
+  background: var(--article-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  overflow-x: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
 @keyframes pulse {
   0%,
   100% {
@@ -606,6 +618,10 @@
 
   .actionLinks {
     justify-content: center;
+  }
+
+  .contributions {
+    display: none;
   }
 }
 
